@@ -33,14 +33,14 @@ Projeto autoral criado como prática de React (Context API, hooks customizados, 
 
 > Próximas versões (filtros por mês/categoria, metas de economia, exportação CSV, integração com Supabase) estão no roadmap do projeto.
 
+## Autor
+
+**Ewerson Benigno**
+GitHub: [@ewbenigno](https://github.com/ewbenigno)
+
 ## Como rodar
 
 ```bash
 npm install
 npm run dev
 ```
-
-## Autor
-
-**Ewerson Benigno**
-GitHub: [@ewbenigno](https://github.com/ewbenigno)

@@ -7,8 +7,8 @@ export default function App() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 space-y-6">
       <header>
-        <h1 className="text-2xl font-bold">Controle Financeiro</h1>
-        <p className="text-gray-400 text-sm">Acompanhe suas receitas e despesas em um só lugar</p>
+        <h1 className="text-2xl font-bold text-textPrimary">Contabilize</h1>
+        <p className="text-textSecondary text-sm">Acompanhe suas receitas e despesas em um só lugar</p>
       </header>
 
       <Summary />

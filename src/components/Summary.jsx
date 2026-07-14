@@ -15,9 +15,9 @@ export function Summary() {
   return (
     <section className="grid grid-cols-1 sm:grid-cols-3 gap-4">
       {cards.map((card) => (
-        <div key={card.label} className="bg-surfaceAlt rounded-xl p-4">
-          <p className="text-sm text-gray-400">{card.label}</p>
-          <p className={`text-2xl font-semibold ${card.tone}`}>{formatCurrency(card.value)}</p>
+        <div key={card.label} className="bg-card rounded-xl p-4">
+          <p className="text-sm text-textSecondary">{card.label}</p>
+          <p className={`font-mono text-2xl font-semibold ${card.tone}`}>{formatCurrency(card.value)}</p>
         </div>
       ))}
     </section>

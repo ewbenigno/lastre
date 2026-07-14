@@ -9,11 +9,11 @@ export function CategoryChart() {
   const data = groupByCategory(transactions)
 
   if (data.length === 0) {
-    return <p className="text-gray-500 text-sm">Adicione despesas para ver o gráfico.</p>
+    return <p className="text-textSecondary text-sm">Adicione despesas para ver o gráfico.</p>
   }
 
   return (
-    <div className="bg-surfaceAlt rounded-xl p-4 h-64">
+    <div className="bg-card rounded-xl p-4 h-64">
       <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie data={data} dataKey="value" nameKey="category" innerRadius={50} outerRadius={80}>
@@ -21,7 +21,17 @@ export function CategoryChart() {
               <Cell key={i} fill={COLORS[i % COLORS.length]} />
             ))}
           </Pie>
-          <Tooltip />
+          <Tooltip
+            contentStyle={{
+              backgroundColor: '#1c1c1e',
+              border: '1px solid rgba(255,255,255,0.1)',
+              borderRadius: '8px',
+              fontFamily: '"JetBrains Mono", monospace',
+              fontSize: '13px',
+            }}
+            labelStyle={{ color: '#f2f2f2' }}
+            itemStyle={{ color: '#f2f2f2' }}
+          />
         </PieChart>
       </ResponsiveContainer>
     </div>
