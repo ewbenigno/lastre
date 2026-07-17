@@ -1,4 +1,4 @@
-# Contabilize
+# Lastre
 
 Dashboard de controle financeiro pessoal construído em React. Permite registrar receitas e despesas, visualizar o saldo em tempo real e entender pra onde o dinheiro está indo através de um gráfico por categoria.
 
